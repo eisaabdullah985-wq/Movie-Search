@@ -72,7 +72,7 @@ export default function SearchPage({ addToFavourites, removeFromFavourites, favo
 
     const id = setTimeout(() => {
       fetch(
-        `http://www.omdbapi.com/?apikey=7e13c8fd&s=${encodeURIComponent(q)}&page=${currentPage}${
+        `https://www.omdbapi.com/?apikey=7e13c8fd&s=${encodeURIComponent(q)}&page=${currentPage}${
           typeFilter ? `&type=${typeFilter}` : ''
         }`
       )

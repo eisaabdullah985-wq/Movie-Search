@@ -1,6 +1,6 @@
 
 const API_KEY = '7e13c8fd';
-const BASE_URL = 'http://www.omdbapi.com/';
+const BASE_URL = 'https://www.omdbapi.com/';
 
 class OMDbApiService {
 
@@ -33,7 +33,7 @@ class OMDbApiService {
       const response = await fetch(url);
       
       if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
+        throw new Error(`HTTPS error! status: ${response.status}`);
       }
       
       const data = await response.json();
@@ -56,7 +56,7 @@ class OMDbApiService {
       const response = await fetch(url);
       
       if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
+        throw new Error(`HTTPS error! status: ${response.status}`);
       }
       
       const data = await response.json();
@@ -79,7 +79,7 @@ class OMDbApiService {
       const response = await fetch(url);
       
       if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
+        throw new Error(`HTTPS error! status: ${response.status}`);
       }
       
       const data = await response.json();

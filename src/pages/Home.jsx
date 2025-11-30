@@ -32,14 +32,14 @@ export default function Home({ addToFavourites, removeFromFavourites, favourites
           fastResponse
         ] = await Promise.all([
           // Featured movie (detailed)
-          fetch(`http://www.omdbapi.com/?apikey=7e13c8fd&i=tt3896198&plot=full`),
+          fetch(`https://www.omdbapi.com/?apikey=7e13c8fd&i=tt3896198&plot=full`),
           
           // All other sections (basic search - FAST)
-          fetch("http://www.omdbapi.com/?apikey=7e13c8fd&s=avengers&type=movie"),
-          fetch(`http://www.omdbapi.com/?apikey=7e13c8fd&s=${currentYear}&type=movie&y=2025`),
-          fetch("http://www.omdbapi.com/?apikey=7e13c8fd&s=superman&type=movie"),
-          fetch("http://www.omdbapi.com/?apikey=7e13c8fd&s=harry&type=movie"),
-          fetch("http://www.omdbapi.com/?apikey=7e13c8fd&s=fast")
+          fetch("https://www.omdbapi.com/?apikey=7e13c8fd&s=avengers&type=movie"),
+          fetch(`https://www.omdbapi.com/?apikey=7e13c8fd&s=${currentYear}&type=movie&y=2025`),
+          fetch("https://www.omdbapi.com/?apikey=7e13c8fd&s=superman&type=movie"),
+          fetch("https://www.omdbapi.com/?apikey=7e13c8fd&s=harry&type=movie"),
+          fetch("https://www.omdbapi.com/?apikey=7e13c8fd&s=fast")
         ])
 
         const featuredData = await featuredResponse.json()
