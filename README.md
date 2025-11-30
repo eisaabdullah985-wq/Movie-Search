@@ -1,21 +1,29 @@
-# 🎬 React Movie Search App
+# 🎬 Movie Search App
 
-A fully responsive movie search application built with **React + OMDb API**.  
-Users can search movies, browse results with pagination, view details on the home page, and add/remove favourites (saved in localStorage).
+A simple movie search app built using **React** and the **OMDb API**.  
+Users can search movies, view details, and add/remove favourites (saved in localStorage).
+
+---
+
+## 🌟 Features
+- 🔍 Search movies by title
+- 📄 Pagination for results
+- ❤️ Add/Remove favourites
+- 💾 Favourites saved in **localStorage**
+- 🎭 Filter by type (Movie / Series / Episode)
+- 📱 Responsive UI with Tailwind CSS
 
 ---
 
-## 🚀 Features
-
-| Feature | Status |
-|--------|--------|
-| Search movies via OMDb API 
-| Detailed info displayed in Home (poster, title, year, type, ratings) 
-| Favourites system with localStorage persistence 
-| Pagination for search results 
-| Type filter (Movie / Series / Episode) 
-| Active route highlighting 
-| Centralized API service (`src/api/omdb.js`) 
-| Responsive UI with Tailwind CSS 
+## 🛠️ Tech Stack
+- React
+- React Router
+- Tailwind CSS
+- OMDb API
 
 ---
+
+## 📦 Installation
+```bash
+npm install
+npm run dev
